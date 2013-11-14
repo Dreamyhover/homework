@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2013-11-03 00:21:37
+ * @version $Id$
+ */
+*{
+	margin: 0 auto;
+	padding: 0px;
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+li {
+	line-height: 37px;
+	list-style-type: none; 
+} 
+#nav a {
+	width: 123px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+} 
+#nav{
+	width: 700px;
+	height: 37px;
+	line-height: 37px;
+}
+#nav  li{
+	height: 37px;
+	background: #e50065;
+	text-align: center;
+	margin-left: 1px;
+	border-radius: 4px;
+/*	padding:0 10px;*/
+}
+#nav  > li{
+	float: left;
+}
+#nav > li > ul{
+	list-style: none;
+	display: none;
+	
+}
+#nav  li:hover{
+	background:#e7498f;
+}
+#nav > li:hover  > ul{
+	display: block;
+}
+#nav > li >ul > li:hover{
+	background: #95a1f9;
+}
+#nav > li >ul > li:hover ul{
+	display: block;
+}
+/*#nav li:hover li:hover ul{
+	
+}*/
+
+
+#nav li{
+	position: relative;
+}
+
+#nav > li  >ul > li > ul{
+	position: absolute;
+	top: 0;
+	left: 124px;
+	display: none;
+}	
+/*
+#nav > li > ul > li:hover ul{
+	display: block;
+}*/
+ 
